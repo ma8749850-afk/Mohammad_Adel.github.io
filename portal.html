@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Private Portal</title>
-
+<title>Private Portal | Abo Nour</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Chakra+Petch:wght@500;600;700&family=Sora:wght@400;500;700;800&family=Cairo:wght@400;600;700;800&family=Alexandria:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-
 </head>
-
-<body>
-
-<div class="portal-container">
-
-<h1>Private Access</h1>
-
-<input type="password" id="passwordInput" placeholder="Enter password">
-
-<button onclick="checkPassword()">Enter</button>
-
-<p id="errorMessage"></p>
-
-</div>
-
+<body data-page="portal">
+<main class="page-shell">
+  <section class="portal-container surface-card">
+    <p class="eyebrow">Restricted Area</p>
+    <h1>Private Access</h1>
+    <p>Enter the password to continue.</p>
+    <input type="password" id="passwordInput" placeholder="Enter password" aria-label="Password">
+    <button class="button button-primary" type="button" onclick="checkPassword()">Enter</button>
+    <p id="errorMessage" aria-live="polite"></p>
+    <a class="button button-secondary" href="index.html">Back to Portfolio</a>
+  </section>
+</main>
 <script src="script.js"></script>
-
 </body>
-
 </html>
